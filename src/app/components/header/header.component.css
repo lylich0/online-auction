@@ -8,7 +8,7 @@ header {
   align-items: center;
 }
 header .nav-bar {
-  width: 15%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;

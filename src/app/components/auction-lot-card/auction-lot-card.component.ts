@@ -6,5 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./auction-lot-card.component.sass']
 })
 export class AuctionLotCardComponent {
+  @Input() title: string = '';
+  @Input() content: string = '';
   @Input() imageUrl: string = '';
 }
