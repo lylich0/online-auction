@@ -1,0 +1,29 @@
+@import '../../styles/pink-button'
+
+header
+  height: 60px
+  padding: 10px
+  box-sizing: border-box
+  background-color: rgba(140, 135, 135, 1)
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .nav-bar
+    width: 15%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    ul
+      width: 50%
+      display: flex
+      justify-content: space-between
+      list-style-type: none
+
+      a
+        text-decoration: none
+        color: black
+
+    button
+      @include pink-button

@@ -1,0 +1,34 @@
+.card {
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 16px darkgray;
+}
+.card .card-img-top {
+  width: 100px;
+}
+.card .card-btn {
+  background-color: rgb(195, 157, 157);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 15px;
+}
+.card .card-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  border: 3px solid darkgrey;
+  box-sizing: border-box;
+  background-color: lavenderblush;
+}
+
+/*# sourceMappingURL=auction-lot-card.component.css.map */

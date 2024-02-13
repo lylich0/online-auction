@@ -1,0 +1,13 @@
+<header>
+  <div class="logo">
+    <p>Logo</p>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    <button *ngIf="!isLoggedIn()" type="button">Login</button>
+    <button *ngIf="isLoggedIn()" type="button">Logout</button>
+  </nav>
+</header>

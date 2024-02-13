@@ -1,0 +1,26 @@
+@import '../../styles/pink-button'
+
+.card
+  width: 250px
+  height: 300px
+  margin: 15px
+  background-color: #F5F5F5
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  text-align: center
+  box-shadow: 0 8px 16px darkgray
+  .card-img-top
+    width: 100px
+  .card-btn
+    @include pink-button
+    a
+      text-decoration: none
+      color: black
+
+.card:hover
+  border: 3px solid darkgrey
+  box-sizing: border-box
+  background-color: lavenderblush
+
