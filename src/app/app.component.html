@@ -1,5 +1,7 @@
 <app-header></app-header>
-<app-auction-lot-card [title]="cards[0].title" [content] = "cards[0].content" [imageUrl]="cards[0].imageUrl"></app-auction-lot-card>
-<app-auction-lot-card [title]="cards[1].title" [content] = "cards[1].content" [imageUrl]="cards[1].imageUrl"></app-auction-lot-card>
-<app-auction-lot-card [title]="cards[2].title" [content] = "cards[2].content" [imageUrl]="cards[2].imageUrl"></app-auction-lot-card>
-<app-auction-lot-card [title]="cards[3].title" [content] = "cards[3].content" [imageUrl]="cards[3].imageUrl"></app-auction-lot-card>
+<div class="card-container">
+  <app-auction-lot-card
+    *ngFor="let card of cards" [title]="card.title" [content]="card.content" [imageUrl]="card.imageUrl"
+  ></app-auction-lot-card>
+</div>
+
