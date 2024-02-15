@@ -8,16 +8,16 @@ header {
   align-items: center;
 }
 header .nav-bar {
-  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .nav-bar ul {
-  width: 50%;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+}
+header .nav-bar ul li {
+  margin: 15px;
 }
 header .nav-bar ul a {
   text-decoration: none;
