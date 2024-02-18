@@ -46,4 +46,15 @@
   border-radius: 15px;
 }
 
+.toggle-between-forms {
+  text-align: center;
+}
+.toggle-between-forms a {
+  color: rgb(195, 157, 157);
+  text-decoration: underline;
+  text-decoration-color: rgb(195, 157, 157);
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 2px;
+}
+
 /*# sourceMappingURL=login-modal.component.css.map */

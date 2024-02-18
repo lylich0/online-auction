@@ -7,6 +7,10 @@ import { NgOptimizedImage } from "@angular/common";
 import { HeaderComponent } from './components/header/header.component';
 import { LoginModalComponent } from './components/login-modal/login-modal.component';
 import { AppRoutingModule } from "./app-routing.module";
+import { FormsModule } from "@angular/forms";
+
+import { environment } from "../environments/environment.development";
+import { AngularFireModule } from "@angular/fire/compat";
 
 
 @NgModule({
@@ -16,11 +20,13 @@ import { AppRoutingModule } from "./app-routing.module";
     HeaderComponent,
     LoginModalComponent
   ],
-  imports: [
-    BrowserModule,
-    NgOptimizedImage,
-    AppRoutingModule // important to remember!!
-  ],
+    imports: [
+        BrowserModule,
+        NgOptimizedImage,
+        AppRoutingModule,
+        FormsModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
