@@ -10,7 +10,7 @@ import {AuthService} from "../../services/auth.service";
 })
 export class LoginModalComponent {
   isSignup: boolean = false;
-  constructor(private router: Router, private afAuth: AngularFireAuth, private authService: AuthService) { }
+  constructor(private router: Router, private afAuth: AngularFireAuth) { }
 
   closeModal() {
     this.router.navigate(['/']);

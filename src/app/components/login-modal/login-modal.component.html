@@ -34,7 +34,7 @@
     </ng-template>
     <hr>
     <div class="toggle-between-forms">
-      <p>{{ isSignup ? 'Already have an account?' : 'Don\'t have an account yet?' }} <a href="#" (click)="toggleSignup()">{{ isSignup ? 'Log In' : 'Sign Up' }}</a></p>
+      <p>{{ isSignup ? 'Already have an account?' : 'Don\'t have an account yet?' }} <a (click)="toggleSignup()">{{ isSignup ? 'Log In' : 'Sign Up' }}</a></p>
     </div>
   </div>
 </div>
