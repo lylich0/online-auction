@@ -11,6 +11,8 @@ import { FormsModule } from "@angular/forms";
 
 import { environment } from "../environments/environment.development";
 import { AngularFireModule } from "@angular/fire/compat";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { AngularFireModule } from "@angular/fire/compat";
         AppRoutingModule,
         FormsModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
+        BrowserAnimationsModule,
+        ToastrModule.forRoot()
     ],
   providers: [],
   bootstrap: [AppComponent]

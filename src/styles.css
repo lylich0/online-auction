@@ -1,10 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @import 'ngx-toastr/toastr'
+ *   |         ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles.sass 3:9  root stylesheet */
 
-body {
-  background-color: lightgray;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import 'ngx-toastr/toastr'\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles.sass 3:9  root stylesheet";
 }
-
-/*# sourceMappingURL=styles.css.map */
