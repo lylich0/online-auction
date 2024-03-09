@@ -8,8 +8,8 @@
       <li><a href="#">About Us</a></li>
     </ul>
     <div class="auth-buttons">
-      <button routerLink="/login" type="button">Login</button>
-      <button *ngIf="isLoggedIn()" type="button">Logout</button>
+      <button *ngIf="!isLoggedIn" routerLink="/login" type="button">Login</button>
+      <button *ngIf="isLoggedIn" (click)="onLogout()" type="button">Logout</button>
     </div>
   </nav>
 </header>
